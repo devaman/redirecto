@@ -1,28 +1,36 @@
 <!doctype html>
 <html>
   <head>
-    <title>GTmetrix Analyzer</title>
+    <title>RedirectO</title>
     <script src="popup.js"></script>
     <link rel="stylesheet "type="text/css" href="styl.css">
   </head>
   <body>
-    <h1 id="heading">Redirecto</h1>
+
+    <div class="center">
+   <img src="logonew.png" width="100">
+   <br><br>
     
   
-  <p>
-   &nbsp; &nbsp; &nbsp; &nbsp; Long URL&nbsp; &nbsp; &nbsp; &nbsp;:
-  <input type="text"  id="longURL"  placeholder=" &nbsp;&nbsp; Original URL &nbsp;&nbsp;  " /><br>
-   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-    &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
-    &nbsp; &nbsp; &nbsp; &nbsp; 
-      <input id="submit" type="submit" value="GENERATE URL">   
+  <p>Long URL:
+    <form id="generate">
+  <input type="text"  id="longURL"  placeholder=" &nbsp;&nbsp; Original URL &nbsp;&nbsp;  " />
+       <button id="submit" ><strong>GENERATE URL</strong></button>
+</form>
+   &nbsp;
+      <!-- <input id="submit" type="submit" value="GENERATE URL"> -->  
    <p>
     <p>Shortened URL:</p>
-  <div id="shortURL" class="unchange">afdxhgf</div>
-  <button id="copyToClipboard" >Copy</button>
+  <div class="unchange" id="urli">
+   <p> http://redirecto.herokuapp.com/</p>
+    <span id="shortURL"></span>
+  </div>
+  <button id="copyToClipboard" ><strong>COPY</strong></button>   &nbsp;
   <p>Passcode:</p>
-  <div id="code" class="unchange">1234</div>
-
+  <div id="code" class="unchange"></div>
+  <div id="analytics">
+  <p id="analytics"><a href="www.google.com">Analytics</a></p></div>
+</div>
   </body>
 </html>
 
